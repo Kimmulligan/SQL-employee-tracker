@@ -1,0 +1,24 @@
+{
+  "name": "profile-generator",
+  "version": "1.0.0",
+  "description": "H!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kimmulligan/profile-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kimmulligan/profile-generator/issues"
+  },
+  "homepage": "https://github.com/Kimmulligan/profile-generator#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^7.3.3",
+    "mysql2": "^2.2.5"
+  }
+}
