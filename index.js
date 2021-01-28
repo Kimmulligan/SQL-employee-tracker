@@ -79,8 +79,9 @@ const updateEmployee = [
 // function to initialize program
 async function init() {
   const response = await inquirer.prompt(
-    startingQuestion
-    /* Pass your questions in here */
+    
+ startingQuestion  
+
   );
   if (response.start === "view all departments") {
     const result = await connection.query(
@@ -115,7 +116,7 @@ async function init() {
       [response.role, Number(response.salary), Number(response.department_id)],
       function (err, res) {
         if (err) throw err;
-        console.log(res.affectedRows + " employee inserted!\n");
+        console.log(res.affectedRows + " role inserted!\n");
         // Call updateProduct() AFTER the INSERT completes
         init();
       }
@@ -127,7 +128,7 @@ async function init() {
       `insert into department (deptName) values (?)`, [response.department],
       function (err, res) {
         if (err) throw err;
-        console.log(res.affectedRows + " employee inserted!\n");
+        console.log(res.affectedRows + " department inserted!\n");
         // Call updateProduct() AFTER the INSERT completes
         init();
       }
@@ -160,6 +161,19 @@ async function init() {
       }
     );
     console.log(result);
+  }
+  else if (response.start === "view all employees") {
+    const result = await connection.query(
+      `SELECT * FROM employee`,
+    //make else if and sql for joining 3 tables
+
+      function (err, res) {
+        if (err) throw err;
+        console.table(res);
+        // Call updateProduct() AFTER the INSERT completes
+        init();
+      }
+    );
   }
 }
 connection.connect(function (err) {

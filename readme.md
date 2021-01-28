@@ -3,8 +3,8 @@
     ![stars badge](https://img.shields.io/github/stars/kimmulligan/profile-generator)
     ![licence badge](https://img.shields.io/github/licence/kimmulligan/profile-generator)
 
-## Walkthrough Video
-https://drive.google.com/file/d/1idorZRssr3io24Yn4yx_CgZ1kg2qQqon/view
+##Walk Through Video
+https://drive.google.com/file/d/1HnIUbXh8Fx7LaMDPtynDeRDnFdt3OsNq/view?usp=sharing    
 
 ## Description
 This app allows a user to create  profiles for each individual employee and view those profiles together. Each profile is different depending on the position an employee holds.
