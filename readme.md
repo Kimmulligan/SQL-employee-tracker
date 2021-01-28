@@ -3,7 +3,7 @@
     ![stars badge](https://img.shields.io/github/stars/kimmulligan/profile-generator)
     ![licence badge](https://img.shields.io/github/licence/kimmulligan/profile-generator)
 
-##Walk Through Video
+## Walk Through Video
 https://drive.google.com/file/d/1HnIUbXh8Fx7LaMDPtynDeRDnFdt3OsNq/view?usp=sharing    
 
 ## Description
